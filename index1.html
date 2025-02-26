@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Authentication</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .hidden {
+            display: none;
+        }
+        #user-info img {
+            width: 100px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Google Authentication</h2>
+    
+    <!-- Login Button -->
+    <button id="loginBtn">Login with Google</button>
+    
+    <!-- User Info (Hidden by Default) -->
+    <div id="user-info" class="hidden">
+        <img id="user-pic" alt="User Picture">
+        <p id="user-name"></p>
+        <p id="user-email"></p>
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+    <!-- Firebase Script -->
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
